@@ -8,15 +8,15 @@ A CLI tool that generates user authentication CRUD operations for your preferred
 npm install cartridge
 ```
 
-Or globally:
+Or use directly without installing:
 
 ```bash
-npm install -g cartridge
+npx cartridge
 ```
 
 ## Usage
 
-After installation, run:
+Simply run the command in your project directory:
 
 ```bash
 npx cartridge
@@ -27,6 +27,8 @@ Or if installed globally:
 ```bash
 cartridge
 ```
+
+The CLI will guide you through selecting your framework (Node.js, NestJS, or Python) and automatically generate all the necessary authentication CRUD files in your current directory. After generation, follow the on-screen instructions to install dependencies with your preferred package manager (npm, yarn, or pnpm).
 
 ## Features
 
@@ -71,5 +73,5 @@ Each framework implementation includes:
 
 ## License
 
-ISC
+MIT
 
