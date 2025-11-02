@@ -1,0 +1,27 @@
+{
+  "name": "cartridge",
+  "version": "1.0.0",
+  "description": "SDK package for user authentication CRUD operations",
+  "main": "index.js",
+  "bin": {
+    "cartridge": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "authentication",
+    "sdk",
+    "crud",
+    "user-management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "enquirer": "^2.4.1",
+    "chalk": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

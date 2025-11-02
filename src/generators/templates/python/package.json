@@ -1,0 +1,22 @@
+{
+  "name": "user-auth-api",
+  "version": "1.0.0",
+  "description": "User authentication API with CRUD operations using Python FastAPI",
+  "main": "app/main.py",
+  "scripts": {
+    "start": "python app/main.py",
+    "dev": "uvicorn app.main:app --reload"
+  },
+  "keywords": [
+    "authentication",
+    "api",
+    "fastapi",
+    "python"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
