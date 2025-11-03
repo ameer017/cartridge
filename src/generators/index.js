@@ -48,6 +48,10 @@ async function generateNodeJs() {
       path.join(templatesDir, "nodejs", "helper", "connection.js"),
       "utf8"
     ),
+    "helper/errorHandler.js": fs.readFileSync(
+      path.join(templatesDir, "nodejs", "helper", "errorHandler.js"),
+      "utf8"
+    ),
     "middleware/auth.js": fs.readFileSync(
       path.join(templatesDir, "nodejs", "helper", "middleware-auth.js"),
       "utf8"
