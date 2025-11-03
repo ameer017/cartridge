@@ -1,6 +1,7 @@
 const express = require("express");
 const connectDB = require("./helper/connection");
 const userRoutes = require("./routes/users");
+const { errorHandler, notFoundHandler } = require("./helper/errorHandler");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,18 +20,11 @@ app.get("/", (req, res) => {
 
 app.use("/api/users", userRoutes);
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res
-    .status(500)
-    .json({ message: "Something went wrong!", error: err.message });
-});
+// 404 handler - must be after all routes
+app.use(notFoundHandler);
 
-// 404 handler
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found" });
-});
+// Global error handler - must be last
+app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => {
