@@ -1,17 +1,17 @@
-# Cartridge SDK
+# Auth Pulse SDK
 
 A CLI tool that generates user authentication CRUD operations for your preferred backend framework.
 
 ## Installation
 
 ```bash
-npm install cartridge
+npm install auth-pulse
 ```
 
 Or use directly without installing:
 
 ```bash
-npx cartridge
+npx auth-pulse
 ```
 
 ## Usage
@@ -19,13 +19,13 @@ npx cartridge
 Simply run the command in your project directory:
 
 ```bash
-npx cartridge
+npx auth-pulse
 ```
 
 Or if installed globally:
 
 ```bash
-cartridge
+auth-pulse
 ```
 
 The CLI will guide you through selecting your framework (Node.js, NestJS, or Python) and automatically generate all the necessary authentication CRUD files in your current directory. After generation, follow the on-screen instructions to install dependencies with your preferred package manager (npm, yarn, or pnpm).

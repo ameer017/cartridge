@@ -9,10 +9,10 @@ const {
 } = require("../src/generators");
 
 async function main() {
-  console.log(chalk.greenBright.bold("\n✨ Welcome to Cartridge SDK! ✨\n"));
+  console.log(chalk.greenBright.bold("\n✨ Welcome to Auth Pulse SDK! ✨\n"));
   console.log(
     chalk.gray(
-      "Cartridge helps you set up user authentication CRUD operations for your preferred backend framework.\n"
+      "Auth Pulse helps you set up user authentication CRUD operations for your preferred backend framework.\n"
     )
   );
 
@@ -26,7 +26,7 @@ async function main() {
 
   if (!shouldContinue) {
     console.log(
-      chalk.red("\n👋 Thanks for checking out Cartridge! See you next time.\n")
+      chalk.red("\n👋 Thanks for checking out Auth Pulse! See you next time.\n")
     );
     process.exit(0);
   }
